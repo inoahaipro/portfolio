@@ -143,6 +143,7 @@ a:hover { text-decoration: underline; }
 
 /* RESUMES */
 .resume-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-bottom: 24px; }
+.resume-grid-single { grid-template-columns: minmax(0, 340px); }
 .resume-card {
   display: block;
   background: var(--bg-card);
