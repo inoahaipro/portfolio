@@ -49,7 +49,8 @@ a:hover { text-decoration: underline; }
   align-items: center;
   justify-content: space-between;
 }
-.brand { font-weight: 800; letter-spacing: 0.06em; font-size: 14px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: 0.06em; font-size: 14px; }
+.brand-mark { width: 26px; height: 26px; display: block; }
 .nav nav { display: flex; gap: 20px; }
 .nav nav a { color: var(--text-dim); font-size: 14px; font-weight: 600; }
 .nav nav a:hover { color: var(--text); text-decoration: none; }
