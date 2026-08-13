@@ -170,10 +170,6 @@ a:hover { text-decoration: underline; }
 .resume-card p { color: var(--text-dim); font-size: 14px; margin-bottom: 14px; }
 .resume-cta { color: var(--accent); font-weight: 700; font-size: 13px; }
 
-.resume-list { display: flex; flex-wrap: wrap; gap: 10px 20px; }
-.resume-list a { color: var(--text-dim); font-size: 14px; border-bottom: 1px dashed var(--border); padding-bottom: 2px; }
-.resume-list a:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
-
 /* FOOTER */
 footer.section { border-bottom: none; padding-bottom: 64px; }
 .contact-line { font-size: 15px; margin-bottom: 8px; }
