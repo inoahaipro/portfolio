@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Noah Roberts - Tech Resume</title>
+<style>
+  @page { size: Letter; margin: 0.25in; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11px; color: #222; display: flex; }
+
+  /* SIDEBAR */
+  .sidebar {
+    width: 200px;
+    min-width: 200px;
+    background: #1a2a4a;
+    color: #fff;
+    padding: 16px 16px;
+  }
+  .sidebar h1 { font-size: 22px; font-weight: 900; line-height: 1.15; margin-bottom: 5px; }
+  .sidebar .tagline { font-size: 8.5px; color: #90a8c8; letter-spacing: 0.04em; text-transform: uppercase; border-bottom: 1px solid #2e4470; padding-bottom: 10px; margin-bottom: 11px; line-height: 1.5; }
+
+  .sidebar-section { margin-bottom: 10px; }
+  .sidebar-section h3 { font-size: 8px; letter-spacing: 0.12em; text-transform: uppercase; color: #90a8c8; margin-bottom: 6px; }
+  .sidebar-section ul { list-style: none; }
+  .sidebar-section ul li { font-size: 9.5px; color: #dce8f8; margin-bottom: 3px; padding-left: 10px; position: relative; line-height: 1.35; }
+  .sidebar-section ul li::before { content: "●"; position: absolute; left: 0; font-size: 6px; color: #90a8c8; top: 2px; }
+  .sidebar-section p { font-size: 9.5px; color: #dce8f8; margin-bottom: 4px; line-height: 1.5; }
+
+  /* MAIN */
+  .main { flex: 1; padding: 14px 24px 14px 22px; background: #fff; }
+  .summary { font-size: 10.5px; line-height: 1.55; color: #333; margin-bottom: 9px; border-bottom: 1px solid #e0e6ef; padding-bottom: 7px; }
+
+  .section { margin-bottom: 8px; }
+  .section-title {
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #fff;
+    background: #1a2a4a;
+    padding: 3px 8px;
+    margin-bottom: 7px;
+  }
+
+  .job { margin-bottom: 6px; }
+  .job-header { margin-bottom: 3px; }
+  .job-title { font-size: 11px; font-weight: 700; color: #111; }
+  .job-company { font-size: 9.5px; color: #5a7ab0; font-style: italic; margin-bottom: 4px; }
+  .job ul { list-style: none; margin-left: 0; }
+  .job ul li { font-size: 10px; color: #333; margin-bottom: 2px; padding-left: 12px; position: relative; line-height: 1.35; }
+  .job ul li::before { content: "●"; position: absolute; left: 0; font-size: 6px; color: #1a2a4a; top: 3px; }
+
+  .edu-item { margin-bottom: 8px; }
+  .edu-item strong { font-size: 10.5px; color: #111; }
+  .edu-item p { font-size: 9.5px; color: #555; margin-top: 1px; }
+  .edu-item em { font-size: 9px; color: #5a7ab0; }
+
+  @media print {
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; min-height: 0; }
+    .sidebar { background: #1a2a4a !important; }
+    .section-title { background: #1a2a4a !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <h1>NOAH<br>ROBERTS</h1>
+  <div class="tagline">Operations · AI Automation · QA<br>Electrical · Technology</div>
+
+  <div class="sidebar-section">
+    <h3>Contact</h3>
+    <p>Salt Lake City, UT</p>
+    <p>385-370-4152</p>
+    <p>inoahguyfromutah@gmail.com</p>
+    <p>noahroberts.vercel.app</p>
+    <p>github.com/inoahaipro</p>
+  </div>
+
+  <div class="sidebar-section">
+    <h3>Technical Skills</h3>
+    <ul>
+      <li>AI Prompt Engineering &amp; Automation</li>
+      <li>Manual &amp; Exploratory Testing</li>
+      <li>Bug Reproduction &amp; Root Cause Analysis</li>
+      <li>Test Case Design</li>
+      <li>Regression &amp; Edge-Case Testing</li>
+      <li>Test Automation (Playwright)</li>
+      <li>Java, C#, SQL, HTML5/CSS3</li>
+      <li>Residential/Commercial Electrical</li>
+      <li>Electromechanical Assembly (Mil-Spec)</li>
+      <li>Blueprint &amp; Schematic Reading</li>
+      <li>Industrial Maintenance &amp; Facilities</li>
+      <li>Team Leadership &amp; Training</li>
+      <li>SAP, Teamcenter, Autodesk Inventor</li>
+    </ul>
+  </div>
+
+  <div class="sidebar-section">
+    <h3>Strengths</h3>
+    <ul>
+      <li>Attention to Detail</li>
+      <li>Zero-Error / Quality-Critical Work</li>
+      <li>Process Improvement</li>
+      <li>Cross-functional Collaboration</li>
+      <li>Fast Learner / Self-directed</li>
+      <li>Safety &amp; Compliance</li>
+      <li>Strong Communication</li>
+    </ul>
+  </div>
+</div>
+
+<div class="main">
+  <div class="summary">
+    Ops background: led teams, ran full P&amp;L, managed a 600+ guest facility. Plus AI-powered tools built and shipped independently. Looking to bring both together professionally.
+  </div>
+
+  <div class="section">
+    <div class="section-title">Projects · AI &amp; Automation</div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-title">Samsung S22+ Kernel Security Assessment</div>
+        <div class="job-company">Kernel Exploitation · Security Research · ARM64 | github.com/inoahaipro/samsung-s22-research</div>
+      </div>
+      <ul>
+        <li>Demonstrated KASLR defeat via adsprpc MEM_MAP side-channel oracle; developed io_uring SQPOLL fixed-buffer UAF write primitive for arbitrary kernel memory writes.</li>
+        <li>Tested 120+ privilege escalation vectors across 10 categories. Proved that Samsung's multi-layered defense (LSM, SELinux, RKP, CFI, ShadowCallStack) successfully prevents privilege escalation even with kernel write access—modern hardening actually works.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-title">Android AI Agent Infrastructure</div>
+        <div class="job-company">Kotlin · Python · Open Source | github.com/inoahaipro/phoneclaw · github.com/inoahaipro/token_firewall</div>
+      </div>
+      <ul>
+        <li>Built a two-layer AI agent system for Android: a local LLM plan-cache that learns a task once and replays it at zero token cost, paired with an on-device automation engine (accessibility-driven UI control, screen capture, wake-word voice assistant) that executes it.</li>
+        <li>No ADB tether or live computer session required at run time. The phone runs the full execution loop itself. Fully open source with documentation and a live demo for each layer.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-title">WCAG Accessibility Scanner</div>
+        <div class="job-company">Next.js · TypeScript · AI-Powered | wcag-scanner-two.vercel.app</div>
+      </div>
+      <ul>
+        <li>Built and launched a web app that scans any website for accessibility issues and uses AI to explain each problem in plain English with an exact fix, saving developers hours of manual auditing.</li>
+        <li>Shipped as a subscription product with a free tier, paid Pro upgrade, and downloadable PDF reports.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-title">FilerAI</div>
+        <div class="job-company">AI Document Processing · SaaS | getfilerai.vercel.app</div>
+      </div>
+      <ul>
+        <li>Built a document-filing product for HVAC shops: drop in permits, warranties, invoices, and EPA 608 logs (PDFs, photos, even handwritten forms) and it extracts customer, equipment, and date data automatically.</li>
+        <li>Typo-tolerant search finds the right customer and job history in seconds; flags expiring warranties and permits before they become a compliance problem.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Experience</div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-title">Electromechanical Assembler / Tool Crib Manager</div>
+        <div class="job-company">L3 Technologies · Salt Lake City, UT · ~3 Years</div>
+      </div>
+      <ul>
+        <li>Assembled precision electronic components built for military-grade communications systems, following strict zero-error specifications and engineering drawings.</li>
+        <li>Managed a calibrated tool inventory of 100+ instruments; restructured the entire tool crib system, cutting retrieval time and eliminating missed deadlines.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-title">Operations &amp; Facilities Manager</div>
+        <div class="job-company">Pinecrest Christian Conference Center · Twin Peaks, CA · ~2 Years</div>
+      </div>
+      <ul>
+        <li>Led teams of 10+ staff across Housekeeping, Food Service, and Grounds, coordinating daily operations for a 600+ guest conference facility.</li>
+        <li>Owned safety compliance for all recreational operations including zipline and aquatics; managed facility maintenance, upgrades, and retail production.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-title">General Manager / Corporate Trainer</div>
+        <div class="job-company">Little Caesars · Riverton, UT · ~1.5 Years</div>
+      </div>
+      <ul>
+        <li>Held full profit &amp; loss responsibility for a high-volume restaurant; managed all hiring, scheduling, and training for a team of 5+.</li>
+        <li>Trained and developed General Managers across 6+ locations throughout Utah; rebuilt company training procedures from the ground up.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-title">Data Conversion Specialist</div>
+        <div class="job-company">Harrison Chiropractic &amp; Wellness · Taylorsville, UT</div>
+      </div>
+      <ul>
+        <li>Scanned and digitized hundreds of patient records into a new system; built AI automation workflows that completed the full project 6-8 months ahead of schedule.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-title">Apprentice Electrician</div>
+        <div class="job-company">Hunt Electric / Blackrock Electric / Salmon Electric · UT · ~1+ Year</div>
+      </div>
+      <ul>
+        <li>Worked in crews of 2-5 completing full electrical installs on 1 apartment or house per day, rough-in through finish, plus live repairs and emergency maintenance.</li>
+        <li>Installing drop-ceiling grid systems and lighting on commercial/industrial job sites, operating scissor lifts for elevated work (current placement via staffing agency at Salmon Electric).</li>
+        <li>All work performed to NEC code from technical blueprints and schematics.</li>
+        <li>Logged 960+ hours toward electrical apprenticeship licensure requirements.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="edu-item">
+      <strong>Salt Lake Community College</strong>, Taylorsville, UT
+      <p>52 Credits toward Associate of Science in Computer Science</p>
+      <em>Coursework: Object-Oriented Programming (Java/C#), Database Fundamentals, Technical Writing</em>
+    </div>
+    <div class="edu-item">
+      <strong>IEC Utah, Electrical Apprentice Program</strong>
+      <p>Technical training in electrical theory, wiring methods, and NEC code application</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
